@@ -1,0 +1,59 @@
+This README file contains information on the contents of the
+meta-beaglebone-rt-sv layer.
+
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.yoctoproject.org/poky.git
+  branch: rocko
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+
+Patches
+=======
+
+Please submit any patches against the meta-beaglebone-rt-sv layer to the
+xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
+
+Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+
+
+Table of Contents
+=================
+
+  I. Adding the meta-beaglebone-rt-sv layer to your build
+ II. Misc
+
+
+I. Adding the meta-beaglebone-rt-sv layer to your build
+=================================================
+
+--- replace with specific instructions for the meta-beaglebone-rt-sv layer ---
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the meta-beaglebone-rt-sv layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the meta-beaglebone-rt-sv layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-poky \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-meta-beaglebone-rt-sv \
+    "
+
+
+II. Misc
+========
+
+This layer provides PREEMPT-RT and I-pipe/Xenomai kernels for BeagleBone Black.
