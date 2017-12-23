@@ -9,15 +9,15 @@ python () {
         raise bb.parse.SkipPackage("Set PREFERRED_PROVIDER_virtual/kernel to linux-yocto-rt to enable it")
 }
 
-# 4.14.6
-SRCREV ?= "5fd159e1ee6a87a72626139813034f24f047d0e6"
-LINUX_VERSION ?= "4.14"
+# 4.14.8
+SRCREV ?= "7b3775017f4e6b87dfd2c7f63d1eaf057948f31d"
+LINUX_VERSION ?= "4.14.8"
+PV = "${LINUX_VERSION}"
 
-SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;branch=linux-${LINUX_VERSION}.y \
+SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;branch=linux-4.14.y \
            file://defconfig \
-           file://patch-4.14.6-rt7.patch \
+           file://patch-4.14.8-rt9.patch \
           "
-PV = "${LINUX_VERSION}.6"
 
 KCONF_BSP_AUDIT_LEVEL = "2"
 LINUX_KERNEL_TYPE = "preempt-rt"
