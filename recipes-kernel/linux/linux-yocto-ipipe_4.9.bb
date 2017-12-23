@@ -35,7 +35,7 @@ COMPATIBLE_MACHINE_beaglebone = "beaglebone"
 #KERNEL_FEATURES_append = " ${KERNEL_EXTRA_FEATURES}"
 
 do_configure_prepend() {
-  cp ${THISDIR}/${PN}/defconfig ${WORKDIR}/defconfig
+#  cp ${THISDIR}/${PN}/defconfig ${WORKDIR}/defconfig
 }
 
 do_prepare_kernel() {
