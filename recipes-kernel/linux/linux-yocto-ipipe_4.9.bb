@@ -29,6 +29,7 @@ KCONF_BSP_AUDIT_LEVEL = "2"
 LINUX_KERNEL_TYPE = "ipipe"
 
 COMPATIBLE_MACHINE_beaglebone = "beaglebone"
+COMPATIBLE_MACHINE_beaglebone-yocto = "beaglebone-yocto"
 
 # Functionality flags
 #KERNEL_EXTRA_FEATURES ?= "features/netfilter/netfilter.scc features/taskstats/taskstats.scc"

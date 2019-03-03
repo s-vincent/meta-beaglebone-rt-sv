@@ -23,6 +23,7 @@ LINUX_KERNEL_TYPE = "preempt-rt"
 
 COMPATIBLE_MACHINE = "(qemux86|qemux86-64|qemuarm|qemuppc|qemumips)"
 COMPATIBLE_MACHINE_beaglebone = "beaglebone"
+COMPATIBLE_MACHINE_beaglebone-yocto = "beaglebone-yocto"
 
 KERNEL_DEVICETREE_qemuarm = "versatile-pb.dtb"
 
